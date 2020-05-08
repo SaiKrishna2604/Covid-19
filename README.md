@@ -2,7 +2,7 @@
 
 We can track the zones in india district wise!!
 
-woring on news and other components | releasing soon!!
+working on news and other components | releasing soon!!
 
 Site preview at: https://covid-19-trackings.netlify.app/
 
