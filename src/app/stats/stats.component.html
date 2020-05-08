@@ -1,0 +1,30 @@
+
+  
+    
+<h3>Indian Zones by Regions</h3>
+<div class="container">
+        <table class="table table-trapped" id="zonestable" >
+                <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>District</th>
+                            <th>Zone</th>
+                            <th>Update On</th>
+                            
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let stat of stats['zones']">
+                            <td>{{stat.state}}</td>
+                            <td>{{stat.district}}</td>
+                            <td>{{stat.zone}}</td>
+                            <td>{{stat.lastupdated}}</td>
+                            
+                        </tr>
+                        
+                        </tbody>
+                
+                
+        </table>
+        </div>
