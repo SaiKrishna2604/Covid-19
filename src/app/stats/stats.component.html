@@ -1,12 +1,14 @@
+<mat-tab-group>
 
-  
+  <mat-tab label="Zones">  
+
     
-<h3>Indian Zones by Regions</h3>
-<div class="mat-elevation-z8">
+<h3>Indian Zones by District</h3>
+
 
 <mat-form-field>
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium">
+    <mat-label>Search</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Telangana, Orange">
   </mat-form-field>
 
   <table mat-table [dataSource]="zones" class="mat-elevation-z8">
@@ -40,7 +42,9 @@
 </table>
   
 <mat-paginator [pageSizeOptions]="[5, 10, 20,30,35]" showFirstLastButtons></mat-paginator>
-</div>
 
+
+</mat-tab>
+</mat-tab-group>
 
 
