@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { StatsComponent } from './stats/stats.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DemoMaterialModule} from './material-module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    DemoMaterialModule,
+
     BrowserAnimationsModule
   ],
   providers: [],

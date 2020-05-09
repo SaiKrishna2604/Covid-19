@@ -2,29 +2,45 @@
   
     
 <h3>Indian Zones by Regions</h3>
-<div class="container">
-        <table class="table table-trapped" id="zonestable" >
-                <thead>
-                        <tr>
-                            <th>State</th>
-                            <th>District</th>
-                            <th>Zone</th>
-                            <th>Update On</th>
-                            
-                        </tr>
-                
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let stat of stats['zones']">
-                            <td>{{stat.state}}</td>
-                            <td>{{stat.district}}</td>
-                            <td>{{stat.zone}}</td>
-                            <td>{{stat.lastupdated}}</td>
-                            
-                        </tr>
-                        
-                        </tbody>
-                
-                
-        </table>
-        </div>
+<div class="mat-elevation-z8">
+
+<mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium">
+  </mat-form-field>
+
+  <table mat-table [dataSource]="zones" class="mat-elevation-z8">
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="state">
+    <th mat-header-cell *matHeaderCellDef> State </th>
+    <td mat-cell *matCellDef="let element"> {{element.state}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="district">
+    <th mat-header-cell *matHeaderCellDef> District </th>
+    <td mat-cell *matCellDef="let element"> {{element.district}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="zone">
+    <th mat-header-cell *matHeaderCellDef> Zones </th>
+    <td mat-cell *matCellDef="let zone"> {{zone.zone}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="lastupdated">
+    <th mat-header-cell *matHeaderCellDef> Lastupdated </th>
+    <td mat-cell *matCellDef="let zone"> {{zone.lastupdated}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+  
+<mat-paginator [pageSizeOptions]="[5, 10, 20,30,35]" showFirstLastButtons></mat-paginator>
+</div>
+
+
+
