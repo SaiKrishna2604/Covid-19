@@ -1,5 +1,7 @@
 h3{
-margin: 0 550px;
+margin: 0 500px;
+font-family: Courier, monospace;
+
 }
 
 /* Structure */
@@ -20,3 +22,10 @@ table {
   margin: 0 57px;
   background-color: #A6ACAF;
 }
+td.mat-cell{
+  font-family: Courier, monospace;
+
+}
+
+
+

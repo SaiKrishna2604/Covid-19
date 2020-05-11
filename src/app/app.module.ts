@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,11 +8,19 @@ import { StatsComponent } from './stats/stats.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './material-module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { NavibarComponent } from './navibar/navibar.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StatsComponent
+    StatsComponent,
+    NavibarComponent,
+    NewsComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -19,8 +28,16 @@ import {DemoMaterialModule} from './material-module';
     HttpClientModule,
     DemoMaterialModule,
 
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
+    TooltipModule.forRoot(),
+    ModalModule.forRoot(),
+    RouterModule.forRoot([
+      
+    ])
   ],
+  exports: [BsDropdownModule, TooltipModule, ModalModule],
+
   providers: [],
   bootstrap: [AppComponent]
 })

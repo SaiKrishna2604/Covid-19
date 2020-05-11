@@ -12,6 +12,5 @@ export class StatserviceService {
 
   getdata(){
     return this.http.get(this._url);
-    
  }
 }
