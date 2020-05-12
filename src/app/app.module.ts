@@ -13,13 +13,15 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NavibarComponent } from './navibar/navibar.component';
 import { NewsComponent } from './news/news.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StatsComponent,
     NavibarComponent,
-    NewsComponent
+    NewsComponent,
+    HomeComponent
     
   ],
   imports: [
