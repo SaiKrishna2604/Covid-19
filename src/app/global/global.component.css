@@ -90,10 +90,10 @@
 } 
 
 .footer {
-    position: fixed;
+    position: inherit;
     left: 0;
     bottom: 0;
-    height:250px;
+    height:283px;
     width: 100%;
     background-color: #1032F1;
     color: white;
@@ -147,37 +147,11 @@ img {
    
 }
 .container {
-   max-width: 1200px;
+   max-width: 500px;
    width: 90%;
    margin: 0 auto;
-}
-
-.inner__sub {
-   --fs-h5: 1.5rem;
-   font-size: var(--fs-h5);
-   color: var(--clr-head);
-   margin-bottom: 1em;
-}
-
-.inner__head {
-   --fs-h2: 3rem;
-   font-size: var(--fs-h2);
-   font-family: var(--ff-head);
-   color: var(--clr-head);
-   line-height: 1.4;
-   margin-bottom: 1em;
-}
-
-.inner__content {
-   margin-bottom: 3em;
-}
-
-.inner__clr {
-   color: hsla(216, 97%, 61%, 1);
-}
-
-.inner__text {
-   text-align: left;
+   display:inline-block;
+   
 }
 
 /*====== cards style ==========*/
@@ -186,7 +160,9 @@ img {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
    grid-gap: 4em 2rem;
-   width:5px;
+   width:25px;
+   display:inline-flexbox;
+
 }
 
 .card {

@@ -41,13 +41,13 @@
 function over(name) {
    var request = new XMLHttpRequest()
 
-request.open('GET', 'https://covid19-india-adhikansh.herokuapp.com/states', true)
+request.open('GET', 'http://covid19-india-adhikansh.herokuapp.com/states', true)
 request.onload = function() {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response)
  
 
-var x=name.getAttributeNS('https://www.w3.org/1999/xlink', 'title');
+var x=name.getAttributeNS('http://www.w3.org/1999/xlink', 'title');
 
    
 

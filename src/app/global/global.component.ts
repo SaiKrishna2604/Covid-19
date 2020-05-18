@@ -21,6 +21,11 @@ export class GlobalComponent implements OnInit {
 
       }
     );
+    this.httpService.get("http://api.coronatracker.com/v2/analytics/country").subscribe(
+      data =>{
+        this.global = data;
+      }
+    )
   }
 
 }

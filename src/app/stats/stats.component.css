@@ -1,4 +1,4 @@
-h3{
+h4{
 margin: 0 10px;
 font-family: Courier, monospace;
 
@@ -46,11 +46,14 @@ display:inline-block;
   padding: 1em; 
    margin: 1rem; 
   border-radius: 5px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.753);
   width: 200px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.container2{
-  width:250px;
+.containe3{
+  width:200px;
+  display:inline-block;
+  margin-top:60px;
+  margin-left:150px;
 }
 

@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { SafetyComponent } from './safety/safety.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     GlobalComponent,
     HomeComponent,
     SafetyComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    AboutComponent
     
   ],
   imports: [
