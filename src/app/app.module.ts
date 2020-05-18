@@ -14,7 +14,6 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { NavibarComponent } from './navibar/navibar.component';
 import { GlobalComponent } from './global/global.component';
 import { HomeComponent } from './home/home.component';
-import { AngularSvgIconModule } from 'angular-svg-icon';
 import { SafetyComponent } from './safety/safety.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { NotfoundComponent } from './notfound/notfound.component';
@@ -40,7 +39,6 @@ import { NotfoundComponent } from './notfound/notfound.component';
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
-    AngularSvgIconModule.forRoot(),
     InlineSVGModule.forRoot(),
     RouterModule.forRoot([
       

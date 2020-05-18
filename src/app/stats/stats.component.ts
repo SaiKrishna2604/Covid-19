@@ -5,7 +5,6 @@ import {Observable} from 'rxjs';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatPaginator} from '@angular/material/paginator';
 import * as $ from 'jquery';
-import { AngularSvgIconModule } from 'angular-svg-icon';
 import { Directive } from '@angular/core';
 
 
