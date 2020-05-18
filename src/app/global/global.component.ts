@@ -9,23 +9,23 @@ export class GlobalComponent implements OnInit {
   
   constructor(private httpService: HttpClient) { }
   arrnews :String[];
-
+  global2:any;
   global: any;
   ngOnInit() {
     this.httpService.get("https://api.coronatracker.com/v3/stats/worldometer/global").subscribe
     (
       data =>{
         this.global = data;
-       this.arrnews=data["Countries"] as string[];
-       console.log(this.arrnews);
+      // this.arrnews=data["Countries"] as string[];
+       //console.log(this.arrnews);
 
       }
     );
     this.httpService.get("http://api.coronatracker.com/v2/analytics/country").subscribe(
       data =>{
-        this.global = data;
+        this.global2 = data;
       }
-    )
+    );
   }
 
 }
