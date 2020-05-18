@@ -55,7 +55,7 @@ var x=name.getAttributeNS('http://www.w3.org/1999/xlink', 'title');
     data["state"].forEach(state => {
      
 if( state.name == x ){
-      console.log(state)
+      //console.log(state)
 
         document.getElementById("demo").innerHTML = state.total;
           document.getElementById("demo1").innerHTML = state.confirmed;

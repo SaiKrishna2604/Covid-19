@@ -12,10 +12,10 @@ export class GlobalComponent implements OnInit {
 
   global: any;
   ngOnInit() {
-    this.httpService.get("https://api.covid19api.com/summary").subscribe
+    this.httpService.get("http://api.coronatracker.com/v3/stats/worldometer/global").subscribe
     (
       data =>{
-        this.global = data["Global"];
+        this.global = data;
        this.arrnews=data["Countries"] as string[];
        console.log(this.arrnews);
 
