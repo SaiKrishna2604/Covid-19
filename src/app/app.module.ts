@@ -12,16 +12,22 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NavibarComponent } from './navibar/navibar.component';
-import { NewsComponent } from './news/news.component';
+import { GlobalComponent } from './global/global.component';
 import { HomeComponent } from './home/home.component';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { SafetyComponent } from './safety/safety.component';
+import { InlineSVGModule } from 'ng-inline-svg';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StatsComponent,
     NavibarComponent,
-    NewsComponent,
-    HomeComponent
+    GlobalComponent,
+    HomeComponent,
+    SafetyComponent,
+    NotfoundComponent
     
   ],
   imports: [
@@ -34,6 +40,8 @@ import { HomeComponent } from './home/home.component';
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
+    AngularSvgIconModule.forRoot(),
+    InlineSVGModule.forRoot(),
     RouterModule.forRoot([
       
     ])

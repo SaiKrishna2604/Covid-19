@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+  public isOnline: boolean = navigator.onLine;
   ngOnInit() {
+    console.log(this.isOnline); 
+
   }
 
 }

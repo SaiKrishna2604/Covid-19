@@ -8,4 +8,6 @@ import {MatPaginator} from '@angular/material/paginator';
 })
 export class AppComponent {
   title = 'COVID-App';
+  constructor(){
+  }
 }

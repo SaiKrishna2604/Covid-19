@@ -2,10 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-news',
-  templateUrl: './news.component.html',
-  styleUrls: ['./news.component.css']
+  templateUrl: './global.component.html',
+  styleUrls: ['./global.component.css']
 })
-export class NewsComponent implements OnInit {
+export class GlobalComponent implements OnInit {
   
   constructor(private httpService: HttpClient) { }
   arrnews :String[];
@@ -17,7 +17,7 @@ export class NewsComponent implements OnInit {
       data =>{
         this.global = data["Global"];
        this.arrnews=data["Countries"] as string[];
-       console.log(this.global)
+       console.log(this.arrnews);
 
       }
     );
