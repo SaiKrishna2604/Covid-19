@@ -18,6 +18,7 @@ import { SafetyComponent } from './safety/safety.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutComponent } from './about/about.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AboutComponent } from './about/about.component';
   ],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
 
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
